@@ -16,6 +16,7 @@ gem "sqlite3", "~> 1.4"
 # use Tails wind css 
 gem 'tailwindcss-rails'
 gem 'devise'
+gem "rolify"
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
 
