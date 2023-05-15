@@ -1,0 +1,18 @@
+<% @users.each do |user| %>
+  Hello <%= user.email %>
+  signed up
+  <%= time_ago_in_words(user.created_at) %>
+  ago <br>
+  <%= user.sign_in_count %><br>
+  <%= user.current_sign_in_at %>
+  <%= user.last_sign_in_at %>
+  <%= user.current_sign_in_ip %>
+  <%= user.last_sign_in_ip %><br>
+  Confirmed Emails? 
+  <%if user.confirmed_at.present?%>
+    <p>Yes</p>
+  <% else %>
+    <p>No</p>
+  <% end %>
+<% end %>
+Hello i want to just check username of branch
